@@ -5,7 +5,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
 
 .container{
     width: 100%;
@@ -20,7 +20,7 @@
     height: 100%;
     position: relative;
 }
-.container-1 h1{
+.container-1 h2{
     position: absolute;
     top:50%;
     left: 50%;
@@ -66,3 +66,34 @@
     line-height: 25px;
     padding-top: 20px;
  }
+ .container-1 h3{
+    position: absolute;
+    top:53%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+    color: white;
+    font-family: 'Sono', sans-serif;
+}
+ @media only screen and (max-width:768px) {
+    .container-1 h2{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: 99;
+        color: white;
+        font-family: 'Fasthand', cursive;
+        font-size: large;
+ }
+ .container-1 h3{
+    position: absolute;
+    top:53%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 99;
+    color: white;
+    font-family: 'Sono', sans-serif;
+    font-size: small;
+}
+}
