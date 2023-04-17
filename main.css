@@ -1,157 +1,65 @@
 *{
     margin: 0px;
-    padding: 0px;
-    font-family: 'Lato',sans-serif;
-	
+    padding: 0px;;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sono:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Rubik+Pixels&family=Sono:wght@500&display=swap');
 .container{
     width: 100%;
     height: 100vh;
 }
-
-.container-1{
-    background-image: url('./images/forestBG.jpg');
+.container1{
+    background-image: url('./images/backdesk1.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 100%;
     position: relative;
-	background-color: #CDD0D7;
 }
-.container-1 h2{
+.container1 h2{
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    z-index: 99;
     color: white;
-    font-family: 'Fasthand', cursive;
-}
-.cloud{
-    overflow: hidden;
-}
-.cloud img{
-    animation: cld calc(8s * var(--i)) linear infinite;
-    opacity: .6;
-    max-width: 100%;
-    position: absolute;
-    bottom: 0px;
-}
-.container-2{
-    width: 50%;
-    margin: 20px auto;
-	background-color: #CDD0D7;
-	color: gray;
-}
-.container-2 h4{
-   text-align: center;
-   color: gray;
-   font-size: 18px;
-   padding-top: 20px;
-}
-.container-2 p{
-    
-    color: rgb(151, 151, 151);
-    font-size: 14px;
-    line-height: 25px;
-    padding-top: 20px;
- }
- @media only screen and (max-width:768px) {
-    .container-1 h2{
-        position: absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50% , -50%);
-        z-index: 99;
-        color: white;
-        font-family: 'Fasthand', cursive;
-        font-size: large;
- }
- .container-1 h3{
-    position: absolute;
-    top:53%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    z-index: 99;
-    color: white;
+    padding: 40px 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rubik Pixels', cursive;
     font-family: 'Sono', sans-serif;
-    font-size: small;
-}
-
-}
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-body {
-	font-family: 'Open Sans', sans-serif;
-	
-}
-.nav{
-	position: relative;
-	float: right;
-	width: 350px;
-	height: 50px;
-	background: #34495e;
-	border-radius: 8px;
-	font-size: 0;
-	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
 }
 .nav a{
-	font-size: 15px;
-	text-transform: uppercase;
-	color: white;
-	text-decoration: none;
-	line-height: 50px;
-	position: relative;
-	z-index: 1;
-	display: inline-block;
-	text-align: center;
+    float: right;
+    color: white;
+    padding: 40px 40px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
 }
-.nav .animation{
-	position: absolute;
-	height: 100%;
-	/* height: 5px; */
-	top: 0;
-	/* bottom: 0; */
-	z-index: 0;
-	background: #0E2632;
-	border-radius: 8px;
-	transition: all .5s ease 0s;
+.down{
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 90%;
 }
-.nav a:nth-child(1){
-	width: 100px;
+.nav :hover{
+    color: black;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.nav .start-home, a:nth-child(1):hover~.animation{
-	width: 100px;
-	left: 0;
+@media only screen and (max-width:768px){
+    .container1{
+        background-image: url('./images/backmobile.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .container1 h2{
+        font-size: 12px;
+    }
+    .nav a{
+        font-size: 15px;
+    }
+    .nav :hover{
+        color:navy;
+    }
 }
-.nav a:nth-child(2){
-	width: 110px;
-}
-.nav a:nth-child(2):hover~.animation{
-	width: 110px;
-	left: 100px;
-}
-.nav a:nth-child(3){
-	width: 100px;
-}
-.nav a:nth-child(3):hover~.animation{
-	width: 100px;
-	left: 210px;
-}
-.nav a:nth-child(4){
-	width: 160px;
-}
-.nav a:nth-child(4):hover~.animation{
-	width: 160px;
-	left: 310px;
-}
-.nav a:nth-child(5){
-	width: 120px;
-}
-.nav a:nth-child(5):hover~.animation{
-	width: 120px;
-	left: 470px;
-}
+
